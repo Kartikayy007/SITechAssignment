@@ -195,6 +195,7 @@ document.addEventListener("DOMContentLoaded", function() {
         displayProducts(filteredProducts);
     }
 
+    
     // Show add to cart animation
     function showAddToCartAnimation() {
         const animation = cartIcon.querySelector('img');
@@ -358,7 +359,7 @@ gsap.to(".logo-SI .logo img", {
         scroller: "body",
         start: "top 45%",
     },
-    width: "4rem",
+    width: "4.3rem",
     duration: 1,
 });
 
@@ -394,12 +395,12 @@ gsap.to("nav ul", {
         start: "top 45%",
     },
     gap: "5rem",
-    scalw: 0.1,
     x: "30vw",
     y: "-20vh",
     duration: 1,
     zindex: -1,
 });
+
 
 // Fix the logo position on scroll
 gsap.to(".logo", {
