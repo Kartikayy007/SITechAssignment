@@ -18,6 +18,8 @@ The project consists of the following files:
 
 5. **script.js**: This JavaScript file contains the interactive elements and functionalities of the website. It handles animations, dynamic content loading, and other UI interactions, such as the side-scrolling text animation on the homepage using GSAP.
 
+6. **product.js**:JavaScript specific to product.html. Handles functionality on the product detail page.
+
 ## Key Features
 
 - **Scrolling Text Animation**: Uses GSAP to create a scrolling text animation on the homepage, adding a dynamic and modern look to the website.
