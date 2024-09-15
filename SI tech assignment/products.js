@@ -1,6 +1,5 @@
-// Fetch productId from URL
-const urlParams = new URLSearchParams(window.location.search);
-const productId = urlParams.get("productId");
+const linkk = new URLSearchParams(window.location.search);
+const productId = linkk.get("productId");
 
 async function fetchProductDetails() {
   try {
@@ -24,8 +23,8 @@ async function fetchProductDetails() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const urlParams = new URLSearchParams(window.location.search);
-  const productId = urlParams.get("productId");
+  const linkk = new URLSearchParams(window.location.search);
+  const productId = linkk.get("productId");
 
   async function fetchProductDetails() {
     try {
