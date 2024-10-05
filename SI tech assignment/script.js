@@ -10,9 +10,10 @@ document.addEventListener("DOMContentLoaded", function() {
     async function fetchData(url) {
         try {
             let data = await fetch(url);
-            if (!data.ok) {
+            if (!data.ok) {         
                 throw new Error(`HTTP error! status: ${data.status}`);
             }
+            console.log(data);
             let response = await data.json();
             console.log(response);
 
@@ -123,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <img src="${item.image}" alt="${item.title}" width="50">
                 <div>
                     <h3>${item.title}</h3>
-                    <p>$${item.price} x ${item.quantity}</p>
+                    <p>$${item.price} X ${item.quantity}</p>
                 </div>
                 <button class="remove-from-cart" data-productid="${item.id}">Remove</button>
             </div>
