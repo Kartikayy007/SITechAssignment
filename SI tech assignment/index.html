@@ -5,25 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comercio</title>
 
+    <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    <!-- Google Fonts: Material Symbols Outlined -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
 
+    <!-- Google Fonts: Playwrite CU -->
     <link
       href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Page 1 Section -->
     <section class="page1">
       <div class="bg"></div>
-      
+      <!-- Background element -->
+
+      <!-- Welcome Box -->
       <div class="welcome-box">
         <img
           src="Assets/WhatsApp Image 2024-09-12 at 22.33.09.jpeg"
@@ -33,6 +40,7 @@
         <h1>E-commerce UI</h1>
       </div>
 
+      <!-- Logo Section -->
       <div class="logo-SI">
         <a href="#" class="logo">
           <img src="Assets/Logo.png" alt="Logo" />
@@ -40,6 +48,7 @@
         <img src="Assets/silogo.svg" class="SI-logo" alt="SI Logo" />
       </div>
 
+      <!-- Navigation Menu -->
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -56,6 +65,7 @@
         </ul>
       </nav>
 
+      <!-- Cart Section -->
       <div class="cart">
         <div class="cart-heading">
           <h2>Your Cart</h2>
@@ -80,12 +90,15 @@
       </ul>
     </nav>
 
+    <!-- Page 2 Section -->
     <section class="page2">
       <h1>Exclu<span class="highlight">si</span>ve Collections</h1>
     </section>
 
+    <!-- Page 3 Section -->
     <section class="page3">
       <div class="move">
+        <!-- Marquee for Best Deals -->
         <div class="marque">
           <h1>BEST DEALS</h1>
           <img src="Assets/arrow-br.svg" alt="Arrow" />
@@ -104,6 +117,7 @@
         </div>
       </div>
 
+      <!-- SVG String -->
       <div class="string">
         <svg width="500" height="200" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -114,7 +128,9 @@
         </svg>
       </div>
 
+      <!-- Product Grid Section -->
       <div class="Product-grid" id="3">
+        <!-- Filter Products Section -->
         <div class="filter-products">
           <div class="filter">
             <select id="price-filter">
@@ -131,13 +147,17 @@
             </select>
             <select id="category-filter">
               <option value="all">All Categories</option>
+              <!-- Add categories dynamically in JavaScript -->
             </select>
           </div>
         </div>
 
+        <!-- Products Display Section -->
         <div class="products">
+          <!-- Products will be displayed here -->
         </div>
 
+        <!-- Footer Section -->
         <footer id="footer">
           <div class="footer-content">
             <h2>About Us</h2>
@@ -159,7 +179,8 @@
         </footer>
       </div>
     </section>
-    
+
+    <!-- GSAP and ScrollTrigger Scripts -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
